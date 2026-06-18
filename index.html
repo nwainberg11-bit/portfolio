@@ -580,6 +580,31 @@
     line-height: 1.6;
   }
 
+  /* ── HERRAMIENTAS ── */
+  .tools {
+    padding: 80px 48px;
+    border-top: 1px solid var(--border);
+  }
+
+  .tools-inner { max-width: 640px; }
+
+  .tools-inner h2 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 3.6vw, 48px);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .tools-inner h2 em { font-style: italic; color: var(--accent2); }
+
+  .tools-body {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
   /* ── PROYECTOS ── */
   .projects {
     padding: 120px 48px;
@@ -1068,6 +1093,7 @@
 
 
     .about { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
+    .tools { padding: 64px 24px; }
     .projects { padding: 80px 24px; }
     .projects-grid { grid-template-columns: 1fr; }
     .project-card.featured { grid-column: span 1; }
@@ -1253,6 +1279,12 @@
     flex-shrink: 0; margin-left: 16px;
   }
   .modal-divider { height: 1px; background: rgba(255,255,255,0.06); margin: 3px 0; }
+  .modal-section-label {
+    font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(240,236,228,0.4);
+    padding: 0 16px 2px;
+  }
 </style>
 </head>
 <body>
@@ -1262,6 +1294,7 @@
   <a href="#" class="nav-logo">NICO<strong style="color:var(--accent)">WAINBERG</strong></a>
   <ul class="nav-links">
     <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#herramientas">Tools</a></li>
     <li><a href="#proyectos">Proyectos</a></li>
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#contacto" class="nav-cta">Contacto</a></li>
@@ -1400,6 +1433,16 @@
         <p>Cada decisión de diseño tiene un "por qué" medible. Prototipo, testeo y refino hasta que los números validan.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- HERRAMIENTAS -->
+<section class="tools" id="herramientas">
+  <div class="tools-inner reveal">
+    <div class="section-eyebrow">Herramientas</div>
+    <h2>Probá mi <em>UX Research Coach</em></h2>
+    <p class="tools-body">Un framework que creé para ordenar y estructurar briefs de research: te guía paso a paso (problema, alcance, objetivos, criterios de éxito) y un coach con IA te hace las preguntas incómodas antes de que las haga un usuario real en el test.</p>
+    <a href="https://ux-research-toolv2.vercel.app" target="_blank" rel="noopener" class="btn-primary">Probar la herramienta →</a>
   </div>
 </section>
 
@@ -2011,6 +2054,17 @@
     <div class="modal-eyebrow">Portfolio</div>
     <h2 class="modal-title">Todos los <em>proyectos</em></h2>
     <div class="modal-project-list">
+
+      <div class="modal-section-label">Tools</div>
+      <a href="https://ux-research-toolv2.vercel.app" target="_blank" rel="noopener" class="modal-project-item" style="--item-color:#d4f064; --item-rgb:212,240,100;">
+        <div class="modal-project-left">
+          <div class="modal-project-name">UX Research Coach</div>
+          <div class="modal-project-role">Framework propio para ordenar y estructurar briefs de research</div>
+          <div class="modal-project-badges"><span class="modal-badge">AI Coach</span><span class="modal-badge">Research Ops</span></div>
+        </div><span class="modal-arrow">→</span>
+      </a>
+<div class="modal-divider" style="margin: 16px 0;"></div>
+      <div class="modal-section-label">Proyectos</div>
 
       <a href="pinta-libre.html" class="modal-project-item" style="--item-color:#7B2FBE; --item-rgb:123,47,190;">
         <div class="modal-project-left">
